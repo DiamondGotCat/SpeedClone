@@ -224,7 +224,7 @@ def bootstrap(repo_url: str, dst: Path):
     print("[green](✓)[/green] 完了しました。")
 
 def main():
-    ap = argparse.ArgumentParser(description="Bootstrap-clone huge/deep GitHub repos without hitting protocol/API quirks.")
+    ap = argparse.ArgumentParser(prog="speedclone", description="ちょっと速い気がしなくもないgitのクローンツール")
     ap.add_argument("url"); ap.add_argument("target")
     ap.add_argument("--force", action="store_true")
     args = ap.parse_args()
